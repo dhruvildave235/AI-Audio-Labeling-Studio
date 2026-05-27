@@ -1,7 +1,8 @@
 # 🎙️ AI Audio Labeling Studio
+![AI Audio Banner](assets/final ai audio .png)
 
 A futuristic AI-powered multilingual speech labeling and waveform annotation web application built using **FastAPI**, **WaveSurfer.js**, **HTML/CSS/JS**, and **FFmpeg**.
-![Reactorium Banner](assets/reactorium-logo.jpeg)
+
 This project works like a mini combination of:
 
 - Audacity
