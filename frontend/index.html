@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Audio Labeler Studio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js@7/dist/plugins/regions.min.js"></script>
+</head>
+<body>
+
+<div class="main-container">
+
+    <div class="sidebar">
+        <h1>AI Labeler</h1>
+
+        <div class="upload-box">
+            <label>Upload Audio / Video</label>
+            <input type="file" id="audioFile">
+
+            <button onclick="uploadFile()">
+                Process File
+            </button>
+        </div>
+
+        <div class="controls">
+            <button onclick="wavesurfer.playPause()">Play / Pause</button>
+            <button onclick="zoomIn()">Zoom In</button>
+            <button onclick="zoomOut()">Zoom Out</button>
+        </div>
+
+        <div class="time-box">
+            <div>
+                <span>Current Time</span>
+                <h2 id="currentTime">00:00:00.000</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="workspace">
+
+        <div class="video-panel">
+            <video id="videoPlayer" controls></video>
+        </div>
+
+        <div class="waveform-panel">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+        </div>
+
+        <div class="transcript-panel">
+            <h2>Transcript</h2>
+            <div id="transcript"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

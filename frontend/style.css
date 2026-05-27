@@ -1,0 +1,28 @@
+
+body {
+    background: #0f172a;
+    color: white;
+    font-family: Arial;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+#waveform {
+    margin-top: 20px;
+    background: #111827;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.word {
+    cursor: pointer;
+    margin: 5px;
+    display: inline-block;
+    padding: 5px;
+    background: #1e293b;
+    border-radius: 5px;
+}

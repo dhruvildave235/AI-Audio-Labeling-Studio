@@ -1,0 +1,72 @@
+<!-- backend/templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Audio Labeler</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+<!-- <script src="https://unpkg.com/wavesurfer.js"></script>
+<script src="https://unpkg.com/wavesurfer.js/dist/plugins/regions.min.js"></script>
+<script src="https://unpkg.com/wavesurfer.js"></script> -->
+
+<script src="https://unpkg.com/wavesurfer.js@7"></script>
+<script src="https://unpkg.com/wavesurfer.js@7/dist/plugins/regions.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="topbar">
+        <h1>AI Audio Labeling Studio</h1>
+    </div>
+
+    <div class="upload-section">
+
+        <input type="file" id="mediaFile">
+        <input type="file" id="excelFile">
+
+        <button onclick="uploadFiles()">Upload</button>
+
+    </div>
+
+    <div class="main-layout">
+
+        <div class="left-panel">
+
+            <h2>Transcript Words</h2>
+
+            <div id="wordList"></div>
+
+        </div>
+
+        <div class="center-panel">
+
+            <div id="waveform"></div>
+
+            <div class="controls">
+
+                <button onclick="playAudio()">Play</button>
+                <button onclick="pauseAudio()">Pause</button>
+                <button onclick="saveLabel()">Save Label</button>
+                <button onclick="exportExcel()">Export Excel</button>
+
+            </div>
+
+            <div class="time-display">
+                <p>Start: <span id="startTime">00:00:00.000</span></p>
+                <p>End: <span id="endTime">00:00:00.000</span></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>

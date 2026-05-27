@@ -1,0 +1,93 @@
+/* backend/static/style.css */
+
+body{
+    margin:0;
+    background:#0f172a;
+    font-family:Arial;
+    color:white;
+}
+
+.container{
+    padding:20px;
+}
+
+.topbar{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.topbar h1{
+    color:#00ffff;
+    font-size:40px;
+}
+
+.upload-section{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+button{
+    background:#00ffff;
+    border:none;
+    padding:10px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.main-layout{
+    display:flex;
+    gap:20px;
+}
+
+.left-panel{
+    width:25%;
+    background:#111827;
+    padding:15px;
+    border-radius:15px;
+    height:80vh;
+    overflow-y:auto;
+}
+
+.center-panel{
+    width:75%;
+    background:#111827;
+    padding:15px;
+    border-radius:15px;
+}
+
+.word{
+    background:#1e293b;
+    padding:10px;
+    margin-bottom:10px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.word:hover{
+    background:#00ffff;
+    color:black;
+}
+
+.selected{
+    background:#00ff99 !important;
+    color:black;
+}
+
+#waveform{
+    height:250px;
+    background:black;
+    border-radius:10px;
+}
+
+.controls{
+    margin-top:20px;
+    display:flex;
+    gap:10px;
+}
+
+.time-display{
+    margin-top:20px;
+    font-size:20px;
+}
